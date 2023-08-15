@@ -45,7 +45,7 @@ const Video = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch(`http://localhost:3080/api/comments/${id}`, {
+    fetch(`https://finaltermgigihbackend-production.up.railway.app/api/comments/${id}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
