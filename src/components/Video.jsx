@@ -24,13 +24,13 @@ const Video = () => {
   let { id } = useParams();
 
   const [formData, setFormData] = useState({ username: "", comment: "" });
-  const { data: video } = useFetchData(`http://localhost:3080/api/videos`, id);
+  const { data: video } = useFetchData(`https://finaltermgigihbackend-production.up.railway.app/api/videos`, id);
   const { data: products } = useFetchData(
-    `http://localhost:3080/api/products`,
+    `https://finaltermgigihbackend-production.up.railway.app/api/products`,
     id
   );
   const { data: comments } = useFetchData(
-    `http://localhost:3080/api/comments`,
+    `https://finaltermgigihbackend-production.up.railway.app/api/comments`,
     id
   );
   // console.log(video, "videos");
