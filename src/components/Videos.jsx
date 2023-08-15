@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Videos = () => {
   const [data, setData] = useState([]);
   const fetchDataVideos = async () => {
-    const response = await fetch("http://localhost:3080/api/videos");
+    const response = await fetch("https://finaltermgigihbackend-production.up.railway.app/api/videos");
     const res = await response.json();
     setData(res);
     // console.log(res);
